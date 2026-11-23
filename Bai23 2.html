@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Cá Nhân | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">DevPortfolio<span>.</span></a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Trang chủ</a>
+        <a href="projects.html">Projects (6)</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Chuyển đổi giao diện sáng/tối">
+          🌙
+        </button>
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Mở menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container reveal">
+      <p class="badge">👋 Xin chào, mình là Web Developer</p>
+      <h1>Xây dựng giao diện web <span>hiện đại, tốc độ & chuẩn Responsive</span></h1>
+      <p class="hero-desc">
+        Tập trung vào trải nghiệm người dùng (UI/UX), tối ưu hiệu năng Mobile-First và kiến trúc mã nguồn sạch.
+      </p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary">Xem 6 Dự Án</a>
+        <a href="#contact" class="btn btn-outline">Liên hệ ngay</a>
+      </div>
+    </section>
+
+    <!-- Kỹ năng nổi bật -->
+    <section class="skills container reveal">
+      <h2 class="section-title">Kỹ năng & Công nghệ</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend Core</h3>
+          <p>HTML5 Semantic, CSS3 (Grid/Flexbox), JavaScript ES6+, Responsive Mobile-First.</p>
+        </div>
+        <div class="skill-card">
+          <h3>UI & Animation</h3>
+          <p>Intersection Observer API, CSS Transitions, Dark/Light Theme System.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Deploy & DevOps</h3>
+          <p>Git/GitHub, Vercel, Netlify, Cloudflare DNS, SSL/HTTPS Configuration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form liên hệ dùng Formspree (Chỉ HTML) -->
+    <section id="contact" class="contact container reveal">
+      <h2 class="section-title">Liên hệ với mình</h2>
+      <p class="section-subtitle">Gửi tin nhắn trực tiếp qua biểu mẫu bên dưới (xử lý bởi Formspree).</p>
+
+      <!-- Thay YOUR_FORM_ID bằng mã Form ID lấy từ https://formspree.io -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Họ và tên</label>
+          <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email của bạn</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Nội dung tin nhắn</label>
+          <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung cần trao đổi..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Gửi tin nhắn</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Personal Portfolio. Deployed with HTTPS & Cloudflare.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
